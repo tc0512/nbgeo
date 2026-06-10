@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbgeo"
+version = "0.1.0"
+description = "Python地理工具库, 适合初中生使用"
+authors = [
+    {name = "tc0512", email = "tancheng_0812@qq.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tc0512/nbgeo"
