@@ -1,4 +1,5 @@
 import rich
+from rich.table import Table
 def judge_directions_on_maps():
     underlined1 = "[underline green]北[/underline green]"
     underlined2 = "[underline green]南[/underline green]"
@@ -13,6 +14,18 @@ def judge_directions_on_maps():
     rich.print(normal)
     rich.print(label)
     rich.print(line)
+def scale():
+    rich.print("[bold red]       图上距离[/bold red]")
+    rich.print("[bold red]比例尺=--------[/bold red]")
+    rich.print("[bold red]       实地距离[/bold red]")
+    table = Table()
+    table.add_column("")
+    table.add_column("比例尺")
+    table.add_column("表示范围")
+    table.add_column("表示内容")
+    table.add_row("1:1000", "大", "小", "详细")
+    table.add_row("1:100000", "小", "大", "粗略")
+    rich.print(table)
 
 #----------test cases---------#
-#judge_directions_on_maps()
+scale()
